@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caja de colores</title>
+    <style>
+      .caja {
+        width: 150px;
+        height: 150px;
+        border: 1px solid black;
+        margin: 0 10px;
+        display: inline-block;
+      }
+
+      #caja1 {
+        background-color: red;
+      }
+
+      #caja2 {
+        background-color: rgb(106, 141, 43);
+      }
+
+      #caja3 {
+        background-color: #a4c9b0;
+      }
+
+      #caja4{
+        background-color: rgba(106, 141, 43,0.75);  
+      }
+
+      #caja5 {
+        background: linear-gradient(
+          90deg,
+          rgba(2, 0, 36, 1) 0%,
+          rgba(9, 9, 121, 1) 35%,
+          rgba(0, 212, 255, 1) 100%
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <div class="caja" id="caja1"></div>
+    <div class="caja" id="caja2"></div>
+    <div class="caja" id="caja3"></div>
+    <div class="caja" id="caja4"></div>
+    <div class="caja" id="caja5"></div>
+  </body>
+</html>

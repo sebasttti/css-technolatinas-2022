@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Especificidad</title>
+    <style>
+      #padre>span .caja {
+        background-color: red;
+      }
+
+      .caja {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="caja"></div>
+
+    <div id="padre">
+      <span class="hijo">
+        <div class="caja"></div>
+      </span>
+    </div>
+  </body>
+</html>

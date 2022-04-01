@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caja</title>
+    <style>
+        .cajaGrande{
+            padding:20px;
+            background-color: blue;
+        }
+
+        .cajaPequena{
+            margin:10px;
+            background-color: red;
+        }
+
+        .cajaMinima{
+            width: 300px;
+            height: 150px;
+            background-color: black;
+        }
+
+        .contenedorCajaBoderBox{
+            border: 1px solid black;
+            display: inline-block;
+        }
+
+        .cajaBorderBox{
+            width: 300px;
+            height: 300px;
+            padding: 10px;
+            margin: 30px;
+            background-color: aqua;
+            box-sizing: border-box;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="cajaGrande">
+        <div class="cajaPequena">
+            <div class="cajaMinima"></div>
+        </div>
+    </div>
+
+    <div class="contenedorCajaBoderBox">
+        <div class="cajaBorderBox">
+            <p>Hola mundo</p>
+        </div>
+    </div>
+
+</body>
+</html>
